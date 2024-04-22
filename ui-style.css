@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Make the body a column layout */
+    align-items: center; /* Align items (including the h1) in the center vertically */
+    justify-content: flex-start; /* Align items at the start of the main axis (top of the page) */
+    min-height: 100vh;
+    background: #b3ecdf;
+}
+
+.tabWrapper {
+    width: 100%;
+    height: 350px;
+}
+
+.tabWrapper .buttonWrapper {
+    height: 15%;
+}
+
+.tabWrapper .buttonWrapper button {
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #73bcab ;
+}
+
+.tabWrapper .buttonWrapper button:hover {
+    background-color: #53ac97;
+}
+
+.tabWrapper .tabContent {
+    height: 200%;
+    background-color: #78c4b2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    box-sizing: border-box;
+    font-size: 22px;
+    display: none;
+}
+
+.tabWrapper .tabContent form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #b3ecdf;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+input[type="date"],
+input[type="number"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.exit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
